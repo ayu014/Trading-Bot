@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Trading Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Voice-Operated OTC Trading Bot</h1>
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Start Conversation</button>
+            <button id="stopBtn" class="btn btn-secondary" disabled>Stop Conversation</button>
+        </div>
+        <div class="transcript-container">
+            <h3>Conversation Transcript</h3>
+            <div id="transcript" class="transcript"></div>
+        </div>
+        <div class="status">
+            <span id="status">Ready to start</span>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
